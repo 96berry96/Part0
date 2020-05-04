@@ -1,0 +1,26 @@
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+server->browser: HTML-Code
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server->browser: main.css
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+server->server: main.js
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server->server: data.json
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/favicon.ico
+server->browser: favicon.ico
+
+
+note over browser:
+browser submit the new note to 
+the server and it is displayed on the
+html code
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server->browser: new_note_spa
+
+
+
+
+
